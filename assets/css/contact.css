@@ -1,0 +1,34 @@
+.contact-us .contact-section-frame {
+    margin: 50px 0;
+}
+
+.left-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-options li{
+    list-style-type: disc;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+.contact-us{
+    background: linear-gradient(0deg, rgba(116, 33, 252, 0.1) 0%, rgb(255, 255, 255) 100%);
+}
+
+.contact-us .right-contact{
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+@media (max-width: 576px) {
+    .contact-us .right-contact{
+        margin-top: 15px;
+    }
+    .contact-section{
+        padding-bottom: 60px;
+    }
+}

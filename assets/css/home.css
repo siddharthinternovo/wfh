@@ -1,0 +1,379 @@
+/* Hero Section */
+
+.hero-section{
+    background-image: url("../img/hero-section-bg.webp");
+    background-position: top;
+    padding: 140px 0 180px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.frames{
+    gap: 50px;
+}
+
+.frame{
+    width: 50%;
+    height: 300px;
+}
+
+#frame1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+    padding-left: 0;
+}
+
+.subtext,.description{
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    color: var(--subtext-color);
+}
+
+#frame2{
+    background-color: rgb(238 238 238);
+    border-radius: 8px;
+}
+
+.hero-section-img{
+    width: 100%;
+    position: relative;
+    top: -30px;
+}
+
+.cta-section{
+    margin-top: 30px;
+}
+
+.button{
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.button{
+    background-color: var(--btn-bg-color);
+    color: white;
+    font-weight: 600px;
+    padding: 15px 25px;
+}
+
+.hero-section .logo-slider{
+    width: 100%;
+    height: 100px;
+    background: green;
+    position: absolute;
+    bottom: -60px;
+    border-radius: 10px;
+    background-color: var(--logo-slider-bg-color);
+}
+
+/* Mid Size Screen */
+@media (max-width: 991px) {
+    .hero-section .frames{
+        flex-direction: column;
+    }
+    .hero-section{
+        padding-bottom: 100px;
+    }
+    .hero-section .frame{
+        width: 100%;
+    }
+}
+
+/* Mobile Size Screen */
+@media (max-width: 576px) {
+    #frame1{
+        /* justify-content: flex-start; */
+    }
+}
+
+
+/* Services Section */
+.services-section{
+    width: 100%;
+    display: flex;
+    background: linear-gradient(180deg,rgba(116,87,218,.2) 0%,rgba(217,176,130,.2) 100%);
+}
+
+.services-section .content{
+    padding: 120px 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+}
+
+.services-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.services-subtext{
+    max-width: 500px;
+}
+
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 0 0 40px 0;
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .card{
+    border-radius: 25px;
+    background-color: #FFF;
+  }
+
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    position: relative;
+    gap:20px;
+    min-height: 420px;
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070F4;
+    border-radius: 25px 25px 0 25px;
+  }
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070F4;
+  }
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+  }
+  .card .name{
+    text-align: left;
+    margin: 0;
+  }
+  .description{
+    color: #707070;
+    text-align: left;
+    margin: 0;
+  }
+  .swiper-navBtn{
+    color: #6E93f7;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: #4070F4;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+    color: #402328;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: #6E93f7;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #4070F4;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  }
+
+.learn-more-btn{
+    color: var(--title-text-color);
+}
+
+
+.card-content .learn-more-btn{
+    position: absolute;
+    bottom: 30px;
+}
+
+/* About Section */
+.about-section-frame{
+    display: flex;
+    gap: 40px;
+    padding: 100px 0
+}
+
+.aboutus-section .about-img{
+    width: 100%;
+}
+
+.right-about{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+}
+
+.right-about .button{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.title{
+    color: var(--title-text-color);
+}
+
+@media (max-width: 991px) {
+    .about-section-frame .right-about{
+        padding-bottom: 80px;
+    }
+    .aboutus-section .about-section-frame{
+        display: flex;
+        align-items: center;
+    }
+    .contact-section .contact-img-section{
+        justify-content: center;
+    }
+}
+
+/* Chooseus Section */
+.chooseus-section{
+    padding: 100px 0;
+    background-color: rgb(246,244,255);
+}
+.chooseus-section-frame{
+    gap: 50px;
+}
+.chooseus-section-frame .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.chooseus-section .title,.chooseus-section .heading{
+    text-align: center;
+    max-width: 460px;
+}
+.chooseus-section .chooseus-section-frame .target,.chooseus-section .chooseus-section-frame .description{
+    text-align: center;
+}
+.chooseus-section .chooseus-section-frame .description{
+    width: 500px;
+    text-align: center;
+    margin-left: -15px;
+    font-style: bold;
+}
+.chooseus-section-frame .card-section{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.chooseus-section-frame .card-section .item{
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    width: 25%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.chooseus-section-frame .card-section .target{
+    font-size: 3rem;
+}
+.chooseus-section-frame .card-section .item:hover .target,.chooseus-section-frame .card-section .item:hover .description{
+    color: rgba(79, 25, 166, 1);
+}
+.chooseus-section-frame .card-section .item:hover{
+    background-color: rgb(246,244,255);
+    transition: 0.3s;
+}
+.chooseus-section-frame .card-section .item p{
+    width: 100%;
+}
+
+/* Contact Us Section */
+.contact-section{
+    background: url('../img/hero-section-bg.webp');
+    background-position: left;
+    padding: 100px 0;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.input-container{
+    display: flex;
+    gap: 10px;
+}
+
+.contact-form .input{
+    outline: none;
+    border: none;
+}
+
+.input-container input{
+    width: 50%;
+    height: 50px;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #F6F4FF;
+}
+
+.message-area{
+    width: 100%;
+    height: 150px;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #F6F4FF;
+}
+
+.contact-form .send-btn{
+    background-color: var(--btn-bg-color);
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+}
+
+.contact-form .send-btn:hover{
+    opacity: 0.9;
+    transition-duration: 0.3s;
+}

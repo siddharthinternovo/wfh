@@ -1,0 +1,139 @@
+.about-hero-section{
+    padding: 140px 0 180px 0;
+    position: relative;
+    background: linear-gradient(0deg, rgba(116, 33, 252, 0.1) 0%, rgb(255, 255, 255) 100%);
+}
+
+.about-hero-section .content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.about-hero-section .heading{
+    text-align: center;
+}
+
+.about-hero-section .subtext{
+    max-width: 500px;
+    text-align: center;
+}
+
+.about-hero-section .image-section{
+    max-width: 1100px;
+    margin-top: 50px;
+}
+
+.about-hero-section .image-section img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Team Section */
+.team-section{
+    /* background-color: rgb(246,244,255); */
+    padding: 100px 0;
+}
+
+.team-section .heading,.team-section .title{
+    text-align: center;
+}
+
+.team-members .row{
+    margin: 20px 0px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.team-members .member{
+    padding: 0;
+    width: 28%;
+}
+
+.team-members .member img{
+    width: 100%;
+}
+
+.member .heading,.member .position{
+    text-align: left;
+    margin-top: 8px;
+}
+
+.member .position{
+    margin-top: 5px;
+}
+
+/* Values Section */
+.value-section{
+    padding: 100px 0 100px;
+    background: linear-gradient(0deg, rgba(116, 33, 252, 0.1) 0%, rgb(255, 255, 255) 100%);
+}
+
+.value-section-frame .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.value-section-frame .value-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.value-cards .card{
+    padding: 80px 50px;
+    background-color: rgb(246,244,255);
+    text-align: center;
+    box-shadow: 0 10px 30px -20px #19154e33;
+}
+
+.founder-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(246,244,255);
+}
+
+.founder-section .left-about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.founder-section .founder-img{
+    box-shadow: 34px 24px #0b0835;
+    width: 90%;
+}
+
+@media (max-width: 991px) {
+    .value-section .value-section-frame{
+        gap: 50px;
+    }
+    .value-section-frame .value-cards {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-members .member{
+        width: 100%;
+    }
+
+    .team-members .member{
+        margin: 10px 0;
+    }
+    .value-section-frame .value-cards{
+        gap: 20px;
+    }
+    .value-section {
+        padding-bottom: 100px;
+    }
+
+    .founder-section .about-img-section{
+        padding: none;
+    }
+}
